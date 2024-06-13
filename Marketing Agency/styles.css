@@ -1,0 +1,215 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  font-family: 'Lexend';
+  /* background-image: linear-gradient(to right,#f72585,#7209b7,#3a0ca3,#4361ee,#4cc9f0 );; */
+  background-image: linear-gradient(to right, #52b788,#2d6a4f, #1b4332, #081c15  );
+}
+
+
+.custom-navbar-style{
+  border-radius: 20px;
+}
+
+.nav-logo-div{
+  width: 110px;
+  border-radius: 100%;
+}
+
+.nav-logo{
+  width: 100%;
+  margin-left: 20px;
+
+}
+
+.custom-style-li{
+  font-size: 18px;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+}
+
+.custom-style-li a{
+  color: white !important;
+}
+
+/* .li-hover-style:hover{
+  background-image: linear-gradient(to right,#7c0434,#0f1129,#2a19c3 );
+  color: white !important;
+  border-radius: 20px;
+  padding: 10px;
+} */
+
+.contact-button{
+  border: none;
+  padding: 10px;
+  margin: 0;
+  border-radius: 20px;
+  background-color: #52b788 ;
+  font-weight: 700;
+  color: white;
+}
+
+.hero-section{
+  padding-top: 50px;
+  padding-bottom: 50px;
+  margin-top: 20px;
+  /* background-image:linear-gradient(to right,#7c0434,#0f1129,#2a19c3 ); */
+  /* color: white; */
+
+}
+
+.hero-heading-div{
+  color: white;
+}
+
+.hero-img-div{
+  max-width:650px;
+  border-radius: 50px;
+  
+}
+
+.hero-img{
+  width: 100%;
+  border-radius: 50px;
+  box-shadow: white 0px 5px 15px;
+}
+
+.hero-section h1{
+  font-size: 3.5rem;
+}
+
+
+
+.learn-more-button{
+  border: none;
+  border-radius: 20px;
+  background-color: white;
+  font-weight: 700;
+  font-size: 1.5rem;
+  padding: 15px 30px;
+  color: white;
+  background-color: #52b788 ;
+
+}
+
+/* slider */
+
+@keyframes slide {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-100%);
+  }
+}
+
+.logos {
+  overflow: hidden;
+  padding: 60px 0;
+  background: white;
+  white-space: nowrap;
+  position: relative;
+}
+
+.logos:before,
+.logos:after {
+  position: absolute;
+  top: 0;
+  width: 250px;
+  height: 100%;
+  content: "";
+  z-index: 2;
+}
+
+.logos:before {
+  left: 0;
+  background: linear-gradient(to left, rgba(255, 255, 255, 0), white);
+}
+
+.logos:after {
+  right: 0;
+  background: linear-gradient(to right, rgba(255, 255, 255, 0), white);
+}
+
+.logos:hover .logos-slide {
+  animation-play-state: paused;
+}
+
+.logos-slide {
+  display: inline-block;
+  animation: 35s slide infinite linear;
+}
+
+.logos-slide img {
+  height: 70px;
+  margin: 0 40px;
+}
+
+/* Services */
+
+.details-button{
+  background-color: #52b788;
+  color: white;
+  font-weight: 700;
+}
+
+.custom-image-border{
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  max-height: 200px;
+  object-fit: cover;
+}
+
+.custom-card-style{
+  border: none;
+  border-radius: 20px;
+  box-shadow: white 0px 5px 15px;
+  max-width: 300px;
+}
+
+/* projects */
+
+.project-description{
+  font-weight: 700; 
+  background: -webkit-linear-gradient(#eee,#081c15 , white);
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* counter */
+
+
+
+
+
+
+
+/* contact */
+
+.contact-section{
+  background-color:white;
+  font-weight: 700; 
+  color: #081c15; 
+  margin-top: 150px;
+  padding-top: 30px; 
+}
+
+.custom-form-style{
+  border: solid 1px #081c15;
+}
+
+.contact-details{
+  margin-top: 50px;
+}
+
+.social-button{
+  font-size: 50px;
+  color:#1b4332
+}
